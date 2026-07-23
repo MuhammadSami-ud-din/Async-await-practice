@@ -82,3 +82,10 @@ console.log(namesInupperCase);
 const numbers = [1, 2, 3, 4, 5, 6];
 const eveNumbers = numbers.filter((number)=> number%2 === 0 );
 console.log(eveNumbers);
+
+
+
+// destructuring practice
+const user = { name: "Muhammad", age: 20 }
+const{name , age} = user;
+console.log("the User name is " + name + " and the age is " + age);
