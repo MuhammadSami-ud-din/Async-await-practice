@@ -79,13 +79,25 @@ console.log(namesInupperCase);
 
 // filter function practice
 
-const numbers = [1, 2, 3, 4, 5, 6];
-const eveNumbers = numbers.filter((number)=> number%2 === 0 );
-console.log(eveNumbers);
+// const numbers = [1, 2, 3, 4, 5, 6];
+// const eveNumbers = numbers.filter((number)=> number%2 === 0 );
+// console.log(eveNumbers);
 
 
 
-// destructuring practice
-const user = { name: "Muhammad", age: 20 }
-const{name , age} = user;
-console.log("the User name is " + name + " and the age is " + age);
+// // destructuring practice
+// const user = { name: "Muhammad", age: 20 }
+// const{name , age} = user;
+// console.log("the User name is " + name + " and the age is " + age);
+
+
+//Example
+const users = [
+  { name: "Ali", age: 22, active: true },
+  { name: "Sara", age: 17, active: false },
+  { name: "Ahmed", age: 25, active: true }
+]
+  
+
+    const activeUserNames = users.filter((user)=> user.active).map((user)=> user.name);
+    console.log(activeUserNames);
